@@ -5,7 +5,7 @@ body {
   color: white;
 }
 
-/* Login Page */
+/* LOGIN */
 .login-body {
   display: flex;
   justify-content: center;
@@ -37,11 +37,12 @@ body {
   cursor: pointer;
 }
 
-/* Dashboard */
+/* DASHBOARD */
 .container {
   display: flex;
 }
 
+/* SIDEBAR */
 .sidebar {
   width: 200px;
   background: #111827;
@@ -49,13 +50,46 @@ body {
   padding: 20px;
 }
 
+.sidebar h2 {
+  color: #00ff9f;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+/* MAIN */
 .main {
   padding: 20px;
+  flex: 1;
+}
+
+.cards {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .card {
   background: #1f2937;
   padding: 15px;
-  margin: 10px 0;
   border-radius: 10px;
+  width: 200px;
+}
+
+.red { background: #7f1d1d; }
+.yellow { background: #78350f; }
+.green { background: #064e3b; }
+
+button {
+  background: #00ff9f;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
 }
