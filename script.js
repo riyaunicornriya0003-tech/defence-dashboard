@@ -11,7 +11,7 @@ function login() {
 
   if (user === "admin" && pass === "1234") {
     alert("Login Success ✅");
-    window.location.href = "index.html";
+    window.location.href = "dashboard.html";
   } else {
     alert("❌ Access Denied");
   }
