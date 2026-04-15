@@ -16,5 +16,5 @@ function logout() {
 }
 
 function simulate() {
-  alert("🚀 Simulation Running...");
+  alert("🚀 Simulation Running...\nAll units deployed successfully!");
 }
