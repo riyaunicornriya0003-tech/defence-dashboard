@@ -1,7 +1,3 @@
-function simulate() {
-  alert("🚀 Simulation Running...\nAll units deployed!");
-}
-
 function login() {
   let user = document.getElementById("user").value.trim();
   let pass = document.getElementById("pass").value.trim();
@@ -17,4 +13,8 @@ function login() {
 function logout() {
   localStorage.removeItem("loggedIn");
   window.location.href = "index.html";
+}
+
+function simulate() {
+  alert("🚀 Simulation Running...");
 }
