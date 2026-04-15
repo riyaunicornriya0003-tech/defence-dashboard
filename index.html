@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Defence Dashboard</title>
+  <title>Defence Command Center</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🚀 Defence Dashboard</h1>
-  <p>It works!</p>
+
+<div class="container">
+
+  <div class="sidebar">
+    <h2>COMMAND</h2>
+    <ul>
+      <li>🏠 Dashboard</li>
+      <li>🎯 Missions</li>
+      <li>📊 Analytics</li>
+      <li>🛰 Surveillance</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <h1>🛡 Defence Dashboard</h1>
+
+    <div class="cards">
+      <div class="card red">🚨 Intrusion Detected</div>
+      <div class="card yellow">🛰 Drone Detected</div>
+      <div class="card green">✅ All Systems Normal</div>
+    </div>
+
+    <button onclick="simulate()">▶ Run Simulation</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
