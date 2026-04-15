@@ -1,10 +1,16 @@
-function login() {
-  let user = document.getElementById("user").value;
-  let pass = document.getElementById("pass").value;
+function simulate() {
+  alert("🚀 Simulation Running...\nAll units deployed!");
+}
 
-  alert("User: " + user + " | Pass: " + pass);
+function login() {
+  let user = document.getElementById("user").value.trim();
+  let pass = document.getElementById("pass").value.trim();
+
+  console.log("User:", user);
+  console.log("Pass:", pass);
 
   if (user === "admin" && pass === "1234") {
+    alert("Login Success ✅");
     window.location.href = "index.html";
   } else {
     alert("❌ Access Denied");
