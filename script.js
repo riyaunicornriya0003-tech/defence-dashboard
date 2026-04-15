@@ -1,3 +1,7 @@
+function simulate() {
+  alert("🚀 Simulation Running...\nAll units deployed!");
+}
+
 function login() {
   let user = document.getElementById("user").value.trim();
   let pass = document.getElementById("pass").value.trim();
@@ -8,4 +12,9 @@ function login() {
   } else {
     alert("❌ Access Denied");
   }
+}
+
+function logout() {
+  localStorage.removeItem("loggedIn");
+  window.location.href = "index.html";
 }
