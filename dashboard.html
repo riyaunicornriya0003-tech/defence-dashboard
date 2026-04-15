@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Defence Command Center</title>
+  <title>Defence Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Redirect to Login Page -->
+<!-- 🔐 Protect Page (only logged in users) -->
 <script>
-  window.location.href = "login.html";
+  if (!localStorage.getItem("loggedIn")) {
+    window.location.href = "index.html";
+  }
 </script>
 
 <div class="container">
@@ -22,7 +24,29 @@
       <li>📊 Analytics</li>
       <li>🛰 Surveillance</li>
     </ul>
+
+    <!-- Logout Button -->
+    <button onclick="logout()" style="margin-top:20px;">Logout</button>
   </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <h1>🛡 Defence Dashboard</h1>
+
+    <div class="cards">
+      <div class="card red">🚨 Intrusion Detected</div>
+      <div class="card yellow">🛰 Drone Detected</div>
+      <div class="card green">✅ All Systems Normal</div>
+    </div>
+
+    <button onclick="simulate()">▶ Run Simulation</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
 
   <!-- Main Content -->
   <div class="main">
